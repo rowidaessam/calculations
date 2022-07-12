@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/task4.css">
+    <title>task4</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="internal">
+            <aside id="side" data-drop-target="true">
+                <h2>Addition</h2>
+
+                    <form oninput="output.value = (val11.valueAsNumber || 0) + (val12.valueAsNumber || 0)" id=fo>
+                        <input type=number name=val11 class="w"> +
+                        <input type=number name=val12 class="w"> =
+                        <output name=output for="val11 val12" form=fo>0</output>
+                    </form>
+
+            </aside>
+
+            <section id="section" data-drop-target="true">
+                <article>
+                    <h2>Multiplication</h2>
+                    <form oninput="output.value = (val1.valueAsNumber || 0) * (val2.valueAsNumber || 0)" id=foo>
+                        <input type=number name=val1 class="w"> X
+                        <input type=number name=val2 class="w"> =
+                        <output name=output for="val1 val2" form=foo>0</output>
+                    </form>
+
+
+                </article>
+            </section>
+
+        </div>
+        <script src="../JS/task4.js"></script>
+        
+</body>
+
+</html>
